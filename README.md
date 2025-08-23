@@ -1,36 +1,121 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🛒 Full-Stack E‑Commerce App
 
-## Getting Started
+A modern, production-ready **full-stack e‑commerce application** built with the latest web technologies:
 
-First, run the development server:
+* **Next.js** – App Router, SSR/SSG, API routes
+* **Tailwind CSS** – utility-first styling
+* **Sanity** – headless CMS for product/content management
+* **Clerk** – authentication & user management
+* **Stripe** – secure payments & checkout
+* **Vercel** – hosting & serverless deployment
+
+---
+
+## ✨ Features
+
+* 🏬 **Product Management** – manage products, categories, and content via Sanity Studio
+* 🔐 **Authentication** – secure login, signup, and user sessions powered by Clerk
+* 💳 **Stripe Checkout** – seamless payment integration with Stripe
+* 📦 **Shopping Cart** – add/remove products, persist cart state
+* 📱 **Responsive UI** – fully responsive with Tailwind CSS
+* ⚡ **Next.js API Routes** – serverless backend functions
+* 🚀 **Deployed on Vercel** – optimized for performance and scale
+
+---
+
+## 🛠️ Tech Stack
+
+* **Frontend:** Next.js 14, React 18, Tailwind CSS
+* **Backend:** Next.js API routes (serverless)
+* **CMS:** Sanity
+* **Auth:** Clerk
+* **Payments:** Stripe
+* **Deployment:** Vercel
+
+---
+
+## 📂 Project Structure
+
+```
+.
+├── app/                 # Next.js App Router pages & layouts
+├── components/          # Reusable UI components
+├── lib/                 # Utility functions & helpers
+├── pages/api/           # API routes (e.g. Stripe webhooks)
+├── sanity/              # Sanity schema & configuration
+├── styles/              # Tailwind global styles
+└── ...
+```
+
+---
+
+## ⚙️ Getting Started
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/yourusername/ecommerce-app.git
+cd ecommerce-app
+```
+
+### 2. Install Dependencies
+
+```bash
+npm install  # or yarn install / bun install
+```
+
+### 3. Set Up Environment Variables
+
+Create a `.env.local` file and configure:
+
+```env
+NEXT_PUBLIC_CLERK_FRONTEND_API=your_clerk_key
+CLERK_SECRET_KEY=your_clerk_secret
+NEXT_PUBLIC_SANITY_PROJECT_ID=your_sanity_project_id
+NEXT_PUBLIC_SANITY_DATASET=production
+STRIPE_SECRET_KEY=your_stripe_secret
+NEXT_PUBLIC_STRIPE_PUBLIC_KEY=your_stripe_public
+STRIPE_WEBHOOK_SECRET=your_stripe_webhook_secret
+```
+
+### 4. Run the Development Server
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Then open [http://localhost:3000](http://localhost:3000) 🚀
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 5. Deploy
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Push to GitHub and connect your repo on [Vercel](https://vercel.com).
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## 🖥️ Sanity Studio
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Run Sanity Studio locally to manage products:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```bash
+cd sanity
+npm run dev
+```
 
-## Deploy on Vercel
+Open [http://localhost:3333](http://localhost:3333).
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 📜 License
+
+This project is licensed under the **MIT License**.
+
+---
+
+## 🌟 Acknowledgements
+
+* [Next.js](https://nextjs.org/)
+* [Tailwind CSS](https://tailwindcss.com/)
+* [Sanity](https://www.sanity.io/)
+* [Clerk](https://clerk.com/)
+* [Stripe](https://stripe.com/)
+* [Vercel](https://vercel.com/)
