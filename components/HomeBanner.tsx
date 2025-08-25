@@ -1,5 +1,5 @@
 import React from 'react'
-import Title from './text'
+import { Title } from "./text";
 import Link from 'next/link'
 import Image from 'next/image'
 import { banner } from '@/images'

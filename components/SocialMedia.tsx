@@ -26,17 +26,17 @@ const socialLink = [
 
     }
 ]
- const SocialMedia = ()=>{
+ const SocialMedia = ({className}:{className?:string})=>{
     
    return (
      <TooltipProvider>
-       <div className="flex items-center justify-start gap-5">
+       <div className={`flex items-center justify-start gap-5 ${className}`}>
          {socialLink?.map((item) => (
            <Tooltip key={item.title}>
              <TooltipTrigger asChild>
                <Link
                  href={item.href}
-                 className="text-white w-8 h-8 flex items-center justify-center border rounded-full hover:text-shop_dark_green hover:border-shop_light_green"
+                 className="w-8 h-8 flex items-center justify-center border rounded-full border-black/20 hover:text-shop_dark_green hover:border-shop_light_green"
                >
                  {item.icon}
                </Link>
